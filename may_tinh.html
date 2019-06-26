@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MayTinh</title>
+</head>
+<body>
+    <form>
+        Caculator
+        <input type="number" id="sothu1" name="so1"/>
+        <input type="number" id="sothu2" name="so2"/>
+        <br>
+        <input type="button" id="daucong" value="Adition(+)" onclick="Funtioncong()"/>
+        <input type="button" id="dautru" value="Suatraction(-)" onclick="Funtiontru()"/>
+        <input type="button" id="daunhan" value="Multiplication(*)" onclick="Funtionnhan()"/>
+        <input type="button" id="dauchia" value="Division(/)" onclick="Funtionchia()"/>
+        <br>
+        <p id="ketqua"></p>
+
+    </form>
+    <script>
+
+        function Funtioncong() {
+            let a = parseFloat(document.getElementById("sothu1").value);
+            let b = parseFloat(document.getElementById("sothu2").value);
+            document.getElementById("ketqua").innerHTML =  a+b ;
+        };
+        function Funtiontru() {
+            let a = parseFloat(document.getElementById("sothu1").value);
+            let b = parseFloat(document.getElementById("sothu2").value);
+            document.getElementById("ketqua").innerHTML =  a-b ;
+        };
+        function Funtionnhan() {
+            let a = parseFloat(document.getElementById("sothu1").value);
+            let b = parseFloat(document.getElementById("sothu2").value);
+            document.getElementById("ketqua").innerHTML =  a/b ;
+        };
+        function Funtionchia() {
+            let a = parseFloat(document.getElementById("sothu1").value);
+            let b = parseFloat(document.getElementById("sothu2").value);
+            document.getElementById("ketqua").innerHTML =  a*b ;
+        };
+
+    </script>
+
+</body>
+</html>
